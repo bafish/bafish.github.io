@@ -88,7 +88,7 @@
 <meta property="og:title" content="categories">
 <meta property="og:url" content="http://yoursite.com/categories/index.html">
 <meta property="og:site_name" content="友善的狗">
-<meta property="og:updated_time" content="2016-12-13T06:28:28.984Z">
+<meta property="og:updated_time" content="2016-12-13T06:58:34.665Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="categories">
 
@@ -193,22 +193,22 @@
         </li>
       
         
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
-        
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
           </a>
         </li>
       
@@ -234,9 +234,45 @@
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
   
 </nav>
 
@@ -262,7 +298,14 @@
 
     
     
-      
+      <div class="category-all-page">
+        <div class="category-all-title">
+            目前共计 1 个分类
+        </div>
+        <div class="category-all">
+          <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/technology/">technology</a><span class="category-list-count">1</span></li></ul>
+        </div>
+      </div>
     
   </div>
 
@@ -272,10 +315,6 @@
 
 
           
-  <div class="comments" id="comments">
-    
-  </div>
-
 
         </div>
         
@@ -386,6 +425,22 @@
 
         
 
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
+  
+
+  
+    <span class="site-pv"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span>
+  
+  
+</div>
+
+
+
         
       </div>
     </footer>
@@ -486,6 +541,19 @@
   
 
   
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.1.0"></script>
+
 
 
 </body>
